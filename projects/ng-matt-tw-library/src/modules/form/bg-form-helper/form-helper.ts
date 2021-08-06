@@ -3,7 +3,7 @@ import {HttpErrorResponse, HttpResponse} from '@angular/common/http';
 import {setFormFieldErrorsFromNgValidators} from './set-form-field-errors-from-ng-validators';
 import * as R from 'ramda';
 import {FormPage} from './form-page';
-import {StatusCode} from '../../../lib/HTTP/status-code';
+import {StatusCode} from '../../../lib/http/status-code';
 import {NgxSpinnerService} from 'ngx-spinner';
 import swal from 'sweetalert2';
 
