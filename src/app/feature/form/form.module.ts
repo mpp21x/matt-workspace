@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { FormRoutingModule } from './form-routing.module';
 import { InputsComponent } from './pages/input/inputs.component';
+import { FormModule as NgMattFormModule } from 'dist/ng-matt-tw-library';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { InputsComponent } from './pages/input/inputs.component';
   ],
   imports: [
     CommonModule,
-    FormRoutingModule
+    FormRoutingModule,
+    NgMattFormModule,
   ]
 })
 export class FormModule { }

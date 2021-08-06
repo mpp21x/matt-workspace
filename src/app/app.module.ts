@@ -5,6 +5,7 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {SharedModule} from './shared/shared.module';
+import {NgxSpinnerModule} from 'ngx-spinner';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import {SharedModule} from './shared/shared.module';
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    NgbModule
+    NgbModule,
+    NgxSpinnerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
