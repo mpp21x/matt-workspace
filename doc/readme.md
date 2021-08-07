@@ -1,4 +1,4 @@
 # Development
 
-`ng generate library ng-matt-tw-lib`
-`ng build ng-matt-tw-library --prod`
+`./node_modules/.bin/ng generate library ng-matt-tw-lib`
+`./node_modules/.bin/ng build ng-matt-tw-library --prod`

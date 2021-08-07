@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {FormHelper} from './form-helper';
+import {FormHelper} from '../lib/form-helper';
 import {FormGroup} from '@angular/forms';
 import {NgxSpinnerService} from 'ngx-spinner';
 
