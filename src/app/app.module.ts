@@ -6,6 +6,7 @@ import {AppComponent} from './app.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {SharedModule} from './shared/shared.module';
 import {NgxSpinnerModule} from 'ngx-spinner';
+import {MattTwModule} from 'ng-matt-tw-library';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import {NgxSpinnerModule} from 'ngx-spinner';
     SharedModule,
     NgbModule,
     NgxSpinnerModule,
+    MattTwModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

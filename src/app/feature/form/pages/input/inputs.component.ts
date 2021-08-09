@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {FormControl, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-inputs',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./inputs.component.scss']
 })
 export class InputsComponent implements OnInit {
+  form: FormGroup;
 
-  constructor() { }
+
+  constructor() {
+  }
 
   ngOnInit(): void {
+    this.form = new FormGroup({
+      name: new FormControl('matt', [Validators.required]),
+    });
+    this.form.get('name');
   }
 
 }

@@ -8,6 +8,7 @@
 * `ng-bootstrap`
 * `bootstrap`
 * `ngx-spinner`
+* `font-awesome@free`
 
 # Loading
 

@@ -29,7 +29,10 @@
             ],
             "styles": [
               "src/styles.scss",
-              "./node_modules/bootstrap/scss/bootstrap.scss"
+              "./node_modules/bootstrap/scss/bootstrap.scss",
+              "./node_modules/@fortawesome/fontawesome-free/scss/solid.scss",
+              "./node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss"
+
             ],
             "scripts": []
           },
@@ -128,7 +131,7 @@
       "projectType": "library",
       "root": "projects/ng-matt-tw-library",
       "sourceRoot": "projects/ng-matt-tw-library/src",
-      "prefix": "lib",
+      "prefix": "matt-tw",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",

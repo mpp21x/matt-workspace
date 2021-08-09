@@ -2,7 +2,16 @@
   <div class="col-md-6">
     <label mattTwRequiredLabel [isRequired]="true">測試</label>
   </div>
+
   <div class="col-md-6">
-    <label>測試</label>
+    <matt-tw-bootstrap-input
+      [labelText]="'name'"
+      [bgControl]="form.get('name')"
+      [showIsInvalid]="true"
+      [errorMessages]="'matt test'">
+    </matt-tw-bootstrap-input>
   </div>
 </div>
+<hr>
+
+

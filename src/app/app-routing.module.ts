@@ -11,10 +11,16 @@ const routes: Routes = [
   {
     path: '',
     component: BaseComponent,
-    children: [{
-      path: 'form',
-      loadChildren: () => import('./feature/form/form.module').then(m => m.FormModule),
-    }],
+    children: [
+      {
+        path: 'form',
+        loadChildren: () => import('./feature/form/form.module').then(m => m.FormModule),
+      },
+      {
+        path: 'table',
+        loadChildren: () => import('./feature/table/table.module').then(m => m.TableModule),
+      }
+    ],
   }
 ];
 

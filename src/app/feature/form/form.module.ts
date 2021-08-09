@@ -1,9 +1,10 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
-import { FormRoutingModule } from './form-routing.module';
-import { InputsComponent } from './pages/input/inputs.component';
-import { FormModule as NgMattFormModule } from 'dist/ng-matt-tw-library';
+import {FormRoutingModule} from './form-routing.module';
+import {InputsComponent} from './pages/input/inputs.component';
+import {ReactiveFormsModule} from '@angular/forms';
+import {FormModule as MattFormModule, BootstrapFormModule} from 'ng-matt-tw-library';
 
 
 @NgModule({
@@ -13,7 +14,10 @@ import { FormModule as NgMattFormModule } from 'dist/ng-matt-tw-library';
   imports: [
     CommonModule,
     FormRoutingModule,
-    NgMattFormModule,
+    ReactiveFormsModule,
+    BootstrapFormModule,
+    MattFormModule,
   ]
 })
-export class FormModule { }
+export class FormModule {
+}

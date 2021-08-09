@@ -12,9 +12,9 @@
     "importHelpers": true,
     "paths": {
       "ng-matt-tw-library": [
-        "dist/ng-matt-tw-library/ng-matt-tw-library",
+        "dist/ng-matt-tw-library/*",
         "dist/ng-matt-tw-library"
-      ]
+      ],
     },
     "target": "es2015",
     "module": "es2020",
