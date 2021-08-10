@@ -1,6 +1,7 @@
 {
   "name": "matt-workspace",
-  "version": "0.0.0",
+  "version": "0.0.2",
+  "author": "Matt lee matt@zuso.ai",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
