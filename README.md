@@ -9,6 +9,9 @@
 * `bootstrap`
 * `ngx-spinner`
 * `font-awesome@free`
+* `moment`
+* `ramda`
+* `sweetalert2`
 
 # Loading
 
