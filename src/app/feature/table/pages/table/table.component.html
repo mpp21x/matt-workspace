@@ -1,6 +1,9 @@
+<h3>Table</h3>
 <div class="row">
   <div class="col-md-12">
-    <matt-tw-bootstrap-table [total]="items.length" (reload)="search()">
+    <matt-tw-bootstrap-table
+      [total]="items.length"
+      (reload)="search()">
       <tr thead *ngTemplateOutlet="tHead"></tr>
       <tr tfoot *ngTemplateOutlet="tHead"></tr>
       <tr *ngFor="let item of items">
@@ -16,3 +19,27 @@
     <th>名稱</th>
   </tr>
 </ng-template>
+
+<h3>Pagination Table</h3>
+<div class="row">
+  <div class="col-md-12">
+    <matt-tw-bootstrap-pagination-table
+      [isNotEmpty]="paginator.isNotEmpty()"
+      [perPage]="paginator.perPage"
+      [currentPage]="paginator.currentPage"
+      [total]="10"
+      (changePage)="changePage($event)">
+      <tr thead *ngTemplateOutlet="tPHead"></tr>
+      <tr tfoot *ngTemplateOutlet="tPHead"></tr>
+      <tr *ngFor="let item of paginator?.data">
+        <td>{{ item.id }}</td>
+        <td>{{ item.name }}</td>
+      </tr>
+    </matt-tw-bootstrap-pagination-table>
+  </div>
+</div>
+<ng-template #tPHead>
+  <th>#</th>
+  <th>名稱</th>
+</ng-template>
+
