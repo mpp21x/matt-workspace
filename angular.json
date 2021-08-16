@@ -135,6 +135,7 @@
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/ng-matt-tw-library/tsconfig.lib.json",
+
             "project": "projects/ng-matt-tw-library/ng-package.json"
           },
           "configurations": {

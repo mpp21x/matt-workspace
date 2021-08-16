@@ -1,7 +1,10 @@
 import {Component, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
+import { SelectOption } from 'ng-matt-tw-library';
 import {of} from 'rxjs';
 import {filter, tap} from 'rxjs/operators';
+
+
 
 @Component({
   selector: 'app-inputs',
@@ -10,6 +13,11 @@ import {filter, tap} from 'rxjs/operators';
 })
 export class InputsComponent implements OnInit {
   form: FormGroup;
+  options: SelectOption<string>[] = [
+    {text: 'matt', value: 'matt'},
+    {text: 'wayne', value: 'wayne'},
+    {text: 'allen', value: '1'},
+  ];
 
 
   constructor() {
@@ -18,6 +26,7 @@ export class InputsComponent implements OnInit {
   ngOnInit(): void {
     this.form = new FormGroup({
       name: new FormControl('matt', [Validators.required]),
+      users: new FormControl(['matt', 'allen'], [Validators.required]),
     });
     this.form.get('name');
 

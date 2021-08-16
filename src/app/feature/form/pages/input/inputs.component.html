@@ -6,10 +6,34 @@
   <div class="col-md-6">
     <matt-tw-bootstrap-input
       [labelText]="'name'"
-      [bgControl]="form.get('name')"
+      [control]="form.get('name')"
       [showIsInvalid]="true"
       [errorMessages]="'matt test'">
     </matt-tw-bootstrap-input>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <matt-tw-bootstrap-textarea
+      [labelText]="'name'"
+      [control]="form.get('name')"
+      [showIsInvalid]="true"
+      [errorMessages]="'matt test'"
+      [rows]="10"
+      [maxLength]="15">
+    </matt-tw-bootstrap-textarea>
+  </div>
+  <div class="col-md-6">
+    <matt-tw-bootstrap-select
+      [labelText]="'name'"
+      [control]="form.get('users')"
+      [isMultiple]="true"
+      [showIsInvalid]="true"
+      [errorMessages]="'matt test'"
+      [options]="options"
+      [size]="20">
+
+    </matt-tw-bootstrap-select>
   </div>
 </div>
 <hr>
