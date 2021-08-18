@@ -26,7 +26,7 @@ export class InputsComponent implements OnInit {
   ngOnInit(): void {
     this.form = new FormGroup({
       name: new FormControl('matt', [Validators.required]),
-      users: new FormControl(['matt', 'allen'], [Validators.required]),
+      users: new FormControl(['matt'], [Validators.required]),
     });
     this.form.get('name');
 
