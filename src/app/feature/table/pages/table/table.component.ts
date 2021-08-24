@@ -34,7 +34,7 @@ export class TableComponent implements OnInit {
 
   ngOnInit(): void {
     const paginator = new Paginator<UserInterface>();
-    paginator.createModelFn = (data: UserInterface) => new User(data.id, data.name);
+    paginator.setCreateModelFn( (data: UserInterface) => new User(data.id, data.name));
     const users = [
       {id: 1, name: 'matt'},
       {id: 2, name: 'wayne'},
