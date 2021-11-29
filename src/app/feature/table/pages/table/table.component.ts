@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Paginator} from '../../../../../../projects/ng-matt-tw-library/src';
+import {Paginator} from 'ng-matt-tw-library';
 
 interface UserInterface {
   id: number;
