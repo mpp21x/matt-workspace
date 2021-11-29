@@ -19,6 +19,10 @@ const routes: Routes = [
       {
         path: 'table',
         loadChildren: () => import('./feature/table/table.module').then(m => m.TableModule),
+      },
+      {
+        path: 'utils',
+        loadChildren: () => import('./feature/utils/utils.module').then(m => m.UtilsModule)
       }
     ],
   }

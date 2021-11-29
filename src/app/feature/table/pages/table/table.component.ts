@@ -34,18 +34,22 @@ export class TableComponent implements OnInit {
 
   ngOnInit(): void {
     const paginator = new Paginator<UserInterface>();
-    paginator.setCreateModelFn( (data: UserInterface) => new User(data.id, data.name));
+
     const users = [
       {id: 1, name: 'matt'},
       {id: 2, name: 'wayne'},
       {id: 3, name: 'allen'},
     ];
-    paginator.setValue(1, 3, users);
+    paginator.setValue(
+      1,
+      3,
+      users.map((data: UserInterface) => new User(data.id, data.name))
+    );
     this.paginator = paginator;
   }
 
   search(): void {
-    console.log('searchz');
+    console.log('search');
   }
 
   changePage($event: number): void {
